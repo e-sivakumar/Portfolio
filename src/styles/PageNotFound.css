@@ -1,0 +1,37 @@
+  .not-found {
+    text-align: center;
+  }
+  
+  .not-found-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ff6f61; /* Highlighted color */
+  }
+  
+  .not-found-text {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #b3b3b3;
+  }
+  
+  .not-found-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff6f61;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .not-found-link:hover {
+    background-color: #e05b4e;
+  }
+  

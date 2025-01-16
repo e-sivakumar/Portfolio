@@ -1,0 +1,129 @@
+/* .col-1{
+    color: white;
+    margin-left: 5%;
+}
+#AboutSection {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+  }
+
+  #AboutCol {
+    display: block;
+    justify-content: space-around;
+    font-size: x-large;
+  }
+
+  #AboutMain{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #AboutCol h1 {
+    color:#61DBFB;
+    
+  }
+  #Qualification h2{
+    color: #61DBFB;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #Qualification p{
+    margin-left:25px ;
+  }
+
+  #AboutCol p {
+    font-size: 25px;
+  }
+  #SubCol{
+    margin-left: 20px;
+  } */
+
+
+
+/* About Section */
+#AboutSection {
+  display: flex;
+  cursor: default;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+  /* background: linear-gradient(145deg, #1e1e1e, #292929);  */
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
+}
+
+/* About Column */
+#AboutCol {
+  max-width: 800px;
+  text-align: left;
+}
+
+/* About Main Content */
+#AboutMain {
+  margin-bottom: 30px;
+}
+
+#AboutMain p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Softer white for better readability */
+}
+/* Highlight Heading */
+#AboutCol h1, #Qualification h2 {
+  color: #61DBFB; /* React's primary color */
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Qualification Section */
+#Qualification {
+  margin-top: 20px;
+  background-color: #1a1a1a; /* Slightly lighter background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#SubCol {
+  margin-left: 10px;
+}
+
+#Qualification h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Highlight color for headings */
+}
+
+#Qualification p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* Hover Effect */
+#AboutCol p:hover {
+  color: #61DBFB;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #AboutSection {
+    padding: 30px 10px;
+  }
+
+  #AboutCol {
+    max-width: 90%;
+  }
+
+  #AboutMain p {
+    font-size: 16px;
+  }
+
+  #AboutCol h1, #Qualification h2 {
+    font-size: 28px;
+  }
+}

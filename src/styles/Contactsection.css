@@ -1,0 +1,96 @@
+#Contactsection {
+    color: white;
+    display: block;
+    justify-content: space-around;
+}
+
+#contactlogo {
+    display: flex;
+}
+
+
+
+#Contactsection h1 {
+    color: #61DBFB;
+    margin-left: 5%;
+    font-size: 250%;
+    font-weight: 800;
+
+}
+#contactMain{
+    margin-left: 10%;
+}
+
+#Address h2 {
+    color: #61DBFB;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%
+}
+
+#Address p {
+    margin-left: 25px;
+    font-size: 150%;
+}
+
+#Phoneno h2 {
+    color: #61DBFB;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    
+}
+
+/* #Phoneno {
+    display: flex;
+} */
+
+#Phoneno p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 150%;
+}
+
+#Contactsection img {
+    border-radius: 80px;
+    width: 5%;
+    background-color: white;
+    border:2px solid black;
+    
+}
+
+#contactLogo {
+    display: flex;
+    gap: 20px;
+    border:2px solid black;
+}
+@media screen and (max-width: 768px) {
+    
+    #Contactsection img {
+        border-radius: 80px;
+        width: 8%;
+        background-color: white;
+    }
+    
+  }
+@media screen and (max-width: 600px) {
+
+    #Contactsection img {
+        border-radius: 80px;
+        width: 10%;
+        background-color: white;
+    }
+    
+  }
+
+@media screen and (max-width: 400px) {
+    
+   
+    #Contactsection img {
+        border-radius: 78%;
+        width:15% ;
+       
+    }
+    
+  } 
+
+
+ 

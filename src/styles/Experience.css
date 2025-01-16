@@ -1,0 +1,126 @@
+/* #ExpCol h1{
+    margin-left: 5%;
+    color: #61DBFB;
+    font-weight: 800;
+    font-size: 250%;
+}
+
+.expContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+.expContainer h4{
+    font-size: 150%;
+}
+.expContainer h2{
+    color: #61DBFB;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+  }
+
+#ExpMainContent{
+    margin-top: 5%;
+}
+#ExpMainContent h3{
+    font-size: 175%;
+}
+#ExpMainContent p{
+   margin-left: 5%;
+   font-size: 150%;
+} */
+
+  /* Experience Section */
+  #ExpSection {
+    padding: 50px 20px;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Column Styling */
+  #ExpCol {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  #ExpCol h1 {
+    color: #61DBFB; /* React's signature color */
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  /* Experience Container */
+  .expContainer {
+    background-color: #1a1a1a; /* Slightly lighter for contrast */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .expContainer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(100, 100, 100, 0.5); /* Hover effect */
+  }
+  
+  /* Company Details */
+  .expContainer h2 {
+    color: #61DBFB;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .expContainer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #cccccc;
+  }
+  
+  /* Main Content */
+  #ExpMainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  #ExpMainContent div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  #ExpMainContent h3 {
+    font-size: 20px;
+    color: #ffcc00; /* Highlight for subheadings */
+    margin-bottom: 5px;
+  }
+  
+  #ExpMainContent p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0; /* Softer white for better readability */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #ExpCol {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    #ExpMainContent {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .expContainer {
+      margin: 10px 0;
+    }
+  }
+  

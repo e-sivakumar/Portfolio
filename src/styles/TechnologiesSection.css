@@ -1,0 +1,130 @@
+.skill_container{
+    width: 70%;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+}
+
+.html {
+    width: 0; /* Start with 0 width */
+    height: 20px; /* Adjust height as needed */
+    background-color: rgb(13, 182, 15);
+    border-radius: 5px;
+    animation: increasehtmlWidth 5s forwards; /* Apply animation over 5 seconds */
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes increasehtmlWidth {
+    from {
+      width: 0; /* Starting width */
+    }
+    to {
+      width: 90%; /* Final width */
+    }
+  }
+  .css {
+    width: 0; /* Start with 0 width */
+    height: 20px; /* Adjust height as needed */
+    background-color: rgb(13, 182, 15);
+    border-radius: 5px;
+    animation: increasecssWidth 5s forwards; /* Apply animation over 5 seconds */
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes increasecssWidth {
+    from {
+      width: 0; /* Starting width */
+    }
+    to {
+      width: 70%; /* Final width */
+    }
+  }
+
+  .js {
+    width: 0; /* Start with 0 width */
+    height: 20px; /* Adjust height as needed */
+    background-color: rgb(113, 234, 115);
+    border-radius: 5px;
+    animation: increasejsWidth 5s forwards; /* Apply animation over 5 seconds */
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes increasejsWidth {
+    from {
+      width: 0; /* Starting width */
+    }
+    to {
+      width: 80%; /* Final width */
+    }
+  }
+p{
+    color: white;
+}
+#frontend_development{
+    margin-left:5% ;
+}
+#frontend_development h2{
+    color: white;
+}
+#frontend_development h1 {
+    
+    color: #61DBFB;
+    font-size: 40px ;
+    font-weight: 800;
+}
+#core_technologies{
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+
+/* 
+.donut-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    aqua 0% 56%,
+    black 56% 100%
+  );
+  position: relative;
+}
+
+.overlay {
+  width: 140px;
+  height: 140px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+} */
+
+.chart-container {
+  display: flex;
+  gap: 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.donut-chart-container {
+  background: radial-gradient(circle, #000000, #1a1a1a);
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+canvas {
+  /* border-radius: 50%; */
+}
+
+.skillTitle{
+  font-size: large;
+  color: white;
+  padding: 0;
+  text-align: center;
+}
