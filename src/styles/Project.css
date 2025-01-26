@@ -1,102 +1,290 @@
-/* #projectContainer{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#Projectsection h1{
-    color: #61DBFB;
-    margin-left: 5%;
-    font-weight: 800;
-    font-size: 250%;
-}
-
-#project1 h2, #project2 h2{
-    color: #61DBFB;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-  }
-
-  #project1 h4, #project2 h4{
+  .container {
+    width: 96%;
+    padding: 0 0 20px 0;
     color: white;
-    font-size: 170%;
+    /* height: 100vh; */
   }
-  #project1 p, #project2 p{
-    margin-left: 5%;
-    font-size: 150%;
-  }
-  #project1, #project2{
-    margin-top: 5%;
-  } */
-
-
-  .carousel {
+  
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    width: 80%;
-    margin: 2rem auto;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #121212;
-    color: #e0e0e0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
   }
   
-  .carousel-inner {
+  .header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #61DBFB;
+    animation: fadeIn 1s ease-in-out;
+
+  }
+  
+  .carousel {
+    width: 100%;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    position: relative;
+    min-height: 600px;
+    perspective: 1000px;
+    overflow: hidden;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    animation: slideUp 0.5s ease-in-out;
+
+    /* msOverflowStyle: 'none'; */
   }
   
-  .carousel-item {
-    min-width: 100%;
+  .card {
+    position: absolute;
+    width: 60%;
     padding: 2rem;
-    text-align: center;
+    height: 80%;
+    background-color: #3c4143;
+    border-radius: 15px;
+    border: 1px solid #374151;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+    transform: translateX(100%) scale(0.8);
+  }
+  .responsibility{
+    font-size: 1rem;
+  }
+  .card p{
+    font-size: 1rem;
+  }
+  .card h3{
+    font-size: 2rem;
   }
   
-  .carousel-item h2 {
-    color: #61dbfb;
+  .tech {
+    background-color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #60a5fa;
+  }
+  
+  @media (max-width: 1200px) {
+    .responsibility {
+      font-size: 0.9rem;
+    }
+    .card p{
+      font-size: 0.9rem;
+    }
+    .card h3{
+      font-size: 1.8rem;
+    }
+    .tech{
+      font-size: 0.9rem;
+    }
+    .carousel{
+      min-height: 600px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .card {
+      width: 50%;
+      height: 70%;
+    }
+    .carousel{
+      min-height: 750px;
+    }
+    .responsibility{
+      font-size: 0.8rem;
+    }
+    .card p{
+      font-size: 0.8rem;
+    }
+    .card h3{
+      font-size: 1.6rem;
+    }
+    .tech{
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 750px) {
+    .card {
+      width: 50%;
+    }
+    .carousel{
+      min-height: 730px;
+    }
+    .responsibility{
+      font-size: 0.7rem;
+    }
+    .card p{
+      font-size: 0.7rem;
+    }
+    .card h3{
+      font-size: 1.5rem;
+    }
+    .tech{
+      font-size: 0.6rem;
+    }
+  }
+
+  
+  .activeCard {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    z-index: 2;
+  }
+  
+  .prevCard {
+    opacity: 0.7;
+    transform: translateX(-20%) scale(0.9);
+    z-index: 1;
+  }
+  
+  .nextCard {
+    opacity: 0.7;
+    transform: translateX(20%) scale(0.9);
+    z-index: 1;
+  }
+  @media (max-width: 600px) {
+    .carousel {
+      flex-direction: column; 
+      overflow: hidden;
+      width: 100%;
+    position: relative;
+    min-height: 500px;
+    perspective: 1000px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    }
+    
+  
+    .card {
+      width: 40%;
+      margin-bottom: 1rem; 
+      padding: 1rem;
+    }
+    .card {
+      position: relative;
+      width: 60%;
+      padding: 2rem;
+      height: 80%;
+      transition: none;
+      opacity:unset;
+      transform: translateX(100%) scale(0.8);
+    }
+    .activeCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+    
+    .prevCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+    
+    .nextCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+  }
+  
+  .projectName {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a8d5e2;
+    margin-bottom: 0.5rem;
+  }
+  
+  .role {
+    font-size: 1.25rem;
+    color: #a8d5e2;
     margin-bottom: 1rem;
   }
   
-  .project-role {
-    font-style: italic;
+  .description {
+    font-size: 1.1rem;
+    color: #f3f4f6;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
   
-  .tech-used h3,
-  .responsibilities h3 {
-    color: #90caf9;
-    margin: 1rem 0 0.5rem;
+  .techContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   
-  .responsibilities ul{
-    list-style-type: none;
-  }
-
-  .tech-used ul{
-    list-style-type: none;
+  .responsibilities {
+    padding: 0;
+    margin: 0;
   }
   
-  .carousel-control {
+  .responsibility {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+    color: #d1d5db;
+  }
+  .responsibilities li{
+    list-style: inside;
+  }
+  .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #e0e0e0;
+    background-color: rgba(31, 41, 55, 0.8);
     border: none;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    z-index: 1;
+    transition: all 0.3s ease;
   }
   
-  .carousel-control.prev {
-    left: 1rem;
+  .arrow:hover {
+    background-color: #60a5fa;
   }
   
-  .carousel-control.next {
-    right: 1rem;
+  .arrow.left {
+    left: 10px;
   }
   
-  .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.7);
+  .arrow.right {
+    right: 10px;
   }
-    
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .activeDot {
+    background-color: #60a5fa;
+    transform: scale(1.2);
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }

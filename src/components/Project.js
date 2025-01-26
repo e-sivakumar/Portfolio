@@ -103,179 +103,65 @@ const Project = () => {
 
   const projectData = [
     {
-      name: "Project Name 1",
+      name: "Klae",
+      role: "Backend developer",
+      description: "A platform for creating webpages using templates or scraping real-world websites, with easy deployment to Netlify.",
+      technologies: ["Node.js", "Express.js", "Mongoose", "Passport.js", "Python", "Puppeteer", "Cheerio", "Nodemailer"],
+      responsibilities: [
+        "Built CRUD operations for users, teams, templates, projects, and webpages.",
+"Automated email requests for new user registrations using Nodemailer.",
+"Integrated Google Single Sign-On (SSO) for authentication using Passport.js.",
+"Implemented website scraping using Puppeteer, Axios, and Cheerio.",
+"Customized website generation based on user requirements using OpenAI."
+      ],
+    },
+    {
+      name: "Rapidloops",
       role: "Backend Developer",
-      description: "Developed a RESTful API for a task management system using Node.js and Express.",
-      technologies: ["Node.js", "Express.js", "MySQL"],
+      description: "Logistics tracker and management system",
+      technologies: ["Node.js", "Express.js", "Sequelize"],
       responsibilities: [
-        "Developed and optimized database schemas.",
-        "Implemented user authentication and role-based access.",
-        "Integrated third-party APIs for enhanced functionality.",
+        "Developed APIs with Node.js and Express.js for managing logistics data.",
+        "Used Sequelize (MySQL ORM) to handle database operations effectively.",
+        "Created middleware for logging, error handling, and transforming requests.",
+"Documented APIs using Swagger for easy integration."
       ],
     },
     {
-      name: "Project Name 2",
-      role: "Full Stack Developer",
-      description: "E-commerce platform with real-time inventory management.",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
+      name: "Atvara",
+      role: "Backend Developer",
+      description: "Hotel industry and inventory management.",
+      technologies: ["Node.js", "Express.js", "MongoDB Client", "Firebase", "Swagger"],
       responsibilities: [
-        "Built responsive front-end interface",
-        "Implemented real-time inventory tracking",
-        "Developed secure payment integration",
+        "Built RESTful APIs with Node.js and Express.js for smooth data exchange.",
+"Added JWT-based authentication and Firebase for managing users and roles.",
+"Created middleware for logging, error handling, and transforming requests.",
+"Documented APIs using Swagger for easy integration."
+       
       ],
     },
-    {
-      name: "Project Name 3",
-      role: "Frontend Developer",
-      description: "Interactive dashboard for data visualization",
-      technologies: ["React", "D3.js", "Tailwind CSS"],
-      responsibilities: [
-        "Created interactive data visualizations",
-        "Implemented responsive design",
-        "Optimized performance for large datasets",
-      ],
-    },
+    
   ];
 
-  const styles = {
-    container: {
-      // padding: '3rem 1rem',
-      width: "100%",
-      color: 'white',
-      height: "100vh"
-    },
-    wrapper: {
-      maxWidth: '100%',
-      margin: '0 auto',
-      position: 'relative',
-    },
-    header: {
-      fontSize: '2.5rem',
-      fontWeight: 'bold',
-      textAlign: 'center',
-      marginBottom: '2rem',
-      color: '#F3F4F6',
-    },
-    carousel: {
-      display: 'flex',
-      position: 'relative',
-      minHeight: '500px',
-      perspective: '1000px',
-      overflow: 'hidden',
-      justifyContent: "center"
-    },
-    card: {
-      position: 'absolute', // Cards don't affect layout
-      width: '60%',
-      padding: '2rem',
-      backgroundColor: '#1F2937',
-      borderRadius: '1rem',
-      border: '1px solid #374151',
-      transition: 'all 0.5s ease-in-out',
-      opacity: 0.5,
-      
-      transform: 'translateX(100%) scale(0.8)',
-    },
-    activeCard: {
-      opacity: 1,
-      transform: 'translateX(0) scale(1)',
-      zIndex: 2,
-    },
-    prevCard: {
-      opacity: 0.7,
-      transform: 'translateX(-25%) scale(0.9)',
-      zIndex: 1,
-    },
-    nextCard: {
-      opacity: 0.7,
-      transform: 'translateX(25%) scale(0.9)',
-      zIndex: 1,
-    },
-    projectName: {
-      fontSize: '2rem',
-      fontWeight: 'bold',
-      color: '#60A5FA',
-      marginBottom: '0.5rem',
-    },
-    role: {
-      fontSize: '1.25rem',
-      color: '#D1D5DB',
-      marginBottom: '1rem',
-    },
-    description: {
-      fontSize: '1.1rem',
-      color: '#F3F4F6',
-      marginBottom: '1.5rem',
-      lineHeight: '1.6',
-    },
-    techContainer: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      gap: '0.5rem',
-      marginBottom: '1.5rem',
-    },
-    tech: {
-      backgroundColor: '#374151',
-      padding: '0.5rem 1rem',
-      borderRadius: '1rem',
-      fontSize: '0.9rem',
-      color: '#60A5FA',
-    },
-    responsibilities: {
-      listStyle: 'none',
-      padding: 0,
-      margin: 0,
-    },
-    responsibility: {
-      marginBottom: '0.75rem',
-      paddingLeft: '1.5rem',
-      position: 'relative',
-      lineHeight: '1.5',
-      color: '#D1D5DB',
-    },
-    bullet: {
-      position: 'absolute',
-      left: 0,
-      color: '#60A5FA',
-    },
-    controls: {
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '1rem',
-      marginTop: '2rem',
-    },
-    button: {
-      backgroundColor: '#374151',
-      border: 'none',
-      color: 'white',
-      padding: '0.75rem 1.5rem',
-      borderRadius: '0.5rem',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-      fontSize: '1rem',
-    },
-    dots: {
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '0.5rem',
-      marginTop: '1rem',
-    },
-    dot: {
-      width: '8px',
-      height: '8px',
-      borderRadius: '50%',
-      backgroundColor: '#374151',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-    },
-    activeDot: {
-      backgroundColor: '#60A5FA',
-      transform: 'scale(1.2)',
-    },
-  };
+  function getWindowDimensions() {
+    return window.innerWidth
+  }
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [windowDimensions]);
+console.log("size ",  windowDimensions)
 
   const nextSlide = () => {
-    if (!isAnimating) {
+    const windowWidth = getWindowDimensions();
+    if ( windowWidth > 600) {
+      console.log("rotation", windowDimensions)
       setIsAnimating(true);
       setCurrentIndex((prev) => (prev + 1) % projectData.length);
       setTimeout(() => setIsAnimating(false), 500);
@@ -283,50 +169,52 @@ const Project = () => {
   };
 
   const prevSlide = () => {
-    if (!isAnimating) {
+    if (!isAnimating && windowDimensions > 600) {
       setIsAnimating(true);
       setCurrentIndex((prev) => (prev - 1 + projectData.length) % projectData.length);
       setTimeout(() => setIsAnimating(false), 500);
     }
   };
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
 
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide,1500);
+  //   return () => clearInterval(interval);
+  // }, []);
+  
   return (
-    <div style={styles.container}>
-      <div style={styles.wrapper}>
-        <h2 style={styles.header}>Featured Projects</h2>
-
-        <div style={{...styles.carousel}}>
+    <div className="container" >
+      <div className="wrapper">
+        <h2 className="header">Featured Projects</h2>
+        {windowDimensions > 600 && <button className="arrow left" onClick={prevSlide}>
+          &#8592;
+        </button>}
+        <div className="carousel">
           {projectData.map((project, index) => {
-            let cardStyle = { ...styles.card };
+            let cardClass = "card";
             if (index === currentIndex) {
-              cardStyle = { ...cardStyle, ...styles.activeCard, };
+              cardClass += " activeCard";
             } else if (index === (currentIndex - 1 + projectData.length) % projectData.length) {
-              cardStyle = { ...cardStyle, ...styles.prevCard  };
+              cardClass += " prevCard";
             } else if (index === (currentIndex + 1) % projectData.length) {
-              cardStyle = { ...cardStyle, ...styles.nextCard };
+              cardClass += " nextCard";
             }
 
             return (
-              <div key={index} style={cardStyle}>
-                <h3 style={styles.projectName}>{project.name}</h3>
-                <p style={styles.role}>{project.role}</p>
-                <p style={styles.description}>{project.description}</p>
-                
-                <div style={styles.techContainer}>
+              <div key={index} className={cardClass}>
+                <h3 className="projectName">{project.name}</h3>
+                <p className=" role">{project.role}</p>
+                <p className="description">{project.description}</p>
+                <div className="techContainer">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} style={styles.tech}>{tech}</span>
+                    <span key={i} className="tech">
+                      {tech}
+                    </span>
                   ))}
                 </div>
-
-                <ul style={styles.responsibilities}>
+                <ul className="responsibilities">
                   {project.responsibilities.map((resp, i) => (
-                    <li key={i} style={styles.responsibility}>
-                      <span style={styles.bullet}>•</span>
+                    <li key={i} className="responsibility">
                       {resp}
                     </li>
                   ))}
@@ -335,45 +223,139 @@ const Project = () => {
             );
           })}
         </div>
-
-        <div style={styles.controls}>
-          <button 
-            style={{
-              ...styles.button,
-              opacity: isAnimating ? 0.7 : 1,
-            }} 
-            onClick={prevSlide}
-            disabled={isAnimating}
-          >
-            Previous
-          </button>
-          <button 
-            style={{
-              ...styles.button,
-              opacity: isAnimating ? 0.7 : 1,
-            }} 
-            onClick={nextSlide}
-            disabled={isAnimating}
-          >
-            Next
-          </button>
-        </div>
-
-        <div style={styles.dots}>
+        { windowDimensions > 600 && <button className="arrow right" onClick={nextSlide}>
+          &#8594;
+        </button>}
+        { windowDimensions > 600 && <div className="dots">
           {projectData.map((_, index) => (
             <div
               key={index}
-              style={{
-                ...styles.dot,
-                ...(index === currentIndex ? styles.activeDot : {}),
-              }}
+              className={`dot ${index === currentIndex ? "activeDot" : ""}`}
               onClick={() => setCurrentIndex(index)}
             />
           ))}
-        </div>
+        </div>}
       </div>
     </div>
   );
 };
 
 export default Project;
+
+
+
+// swiper
+
+// import React from 'react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/autoplay';
+
+// const Project = () => {
+//   const projectData = [
+//     {
+//       name: "Project Name 1",
+//       role: "Backend Developer",
+//       description: "Developed a RESTful API for a task management system using Node.js and Express.",
+//       technologies: ["Node.js", "Express.js", "MySQL"],
+//       responsibilities: [
+//         "Developed and optimized database schemas.",
+//         "Implemented user authentication and role-based access.",
+//         "Integrated third-party APIs for enhanced functionality.",
+//       ],
+//     },
+//     {
+//       name: "Project Name 1",
+//       role: "Backend Developer",
+//       description: "Developed a RESTful API for a task management system using Node.js and Express.",
+//       technologies: ["Node.js", "Express.js", "MySQL"],
+//       responsibilities: [
+//         "Developed and optimized database schemas.",
+//         "Implemented user authentication and role-based access.",
+//         "Integrated third-party APIs for enhanced functionality.",
+//       ],
+//     },
+//     {
+//       name: "Project Name 2",
+//       role: "Full Stack Developer",
+//       description: "E-commerce platform with real-time inventory management.",
+//       technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
+//       responsibilities: [
+//         "Built responsive front-end interface",
+//         "Implemented real-time inventory tracking",
+//         "Developed secure payment integration",
+//       ],
+//     },
+//     {
+//       name: "Project Name 3",
+//       role: "Frontend Developer",
+//       description: "Interactive dashboard for data visualization",
+//       technologies: ["React", "D3.js", "Tailwind CSS"],
+//       responsibilities: [
+//         "Created interactive data visualizations",
+//         "Implemented responsive design",
+//         "Optimized performance for large datasets",
+//       ],
+//     },
+//   ];
+
+//   return (
+//     <div style={{ width: "80%", padding: "2rem", margin: "0 auto", background: "#1F2937", color: "white" }}>
+//       <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>Featured Projects</h2>
+//       <Swiper
+//         modules={[Navigation, Pagination, Autoplay]}
+//         spaceBetween={50} // Spacing between slides
+//         slidesPerView={2} // Number of slides visible at a time
+//         navigation // Enable navigation arrows
+//         pagination={{ clickable: true }} // Enable pagination dots
+//         autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay settings
+//         breakpoints={{
+//           // Customize behavior for different screen sizes
+//           1200: { slidesPerView: 2 },
+//           1000: { slidesPerView: 2 },
+//           600: { slidesPerView: 1 },
+//         }}
+//       >
+//         {projectData.map((project, index) => (
+//           <SwiperSlide key={index}>
+//             <div
+//               style={{
+//                 background: "#374151",
+//                 padding: "1.5rem",
+//                 borderRadius: "1rem",
+//                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+//               }}
+//             >
+//               <h3 style={{ color: "#60A5FA" }}>{project.name}</h3>
+//               <p>{project.role}</p>
+//               <p>{project.description}</p>
+//               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "1rem" }}>
+//                 {project.technologies.map((tech, i) => (
+//                   <span
+//                     key={i}
+//                     style={{
+//                       background: "#60A5FA",
+//                       color: "#1F2937",
+//                       padding: "0.5rem 1rem",
+//                       borderRadius: "0.5rem",
+//                       width: "100%",
+//                       height: "100%"
+//                     }}
+//                   >
+//                     {tech}
+//                   </span>
+//                 ))}
+//               </div>
+//             </div>
+//           </SwiperSlide>
+//         ))}
+//       </Swiper>
+//     </div>
+//   );
+
+// };
+
+// export default Project;

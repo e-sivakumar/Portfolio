@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/HeroSection.css';
 import logo from '../images/logoreact.webp'
-import nodeLogo from 'C:/Users/SivakumarElango/Downloads/Node.js.png'
+import nodeLogo from '../images/Node.js.png'
 import photo from '../images/siva1.jpeg'
 
 const HeroSection = () => {
