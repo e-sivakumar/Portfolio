@@ -35,7 +35,7 @@ const HeroSection = () => {
           <img
             className='image-2'
             src={photo}
-            alt="image"
+            alt="Profile"
           />
         </div>
       </div>

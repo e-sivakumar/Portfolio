@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import About from './components/About';
@@ -14,7 +14,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <div className="App" style={{backgroundColor:"black"}}>
-      <BrowserRouter>
+      <BrowserRouter basename='/Portfolio'>
       <ScrollToTop/>
       <Header />
       
@@ -26,7 +26,7 @@ function App() {
       <Route path='/Projects' element= {<Project/>}/>
       <Route path='/experience' element= {<Experience/>}/>
       <Route path='/*' element= {<PageNotFount/>}/>
-
+      <Route path='*' element={<Navigate to="/" replace />} />
       </Routes>
       </BrowserRouter>
     </div>
