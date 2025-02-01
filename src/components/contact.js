@@ -23,17 +23,19 @@ const Contact = () => {
         </div>
         <div id="Phoneno" className="contact-card">
           <h2>Phone No:</h2>
-          <p>+91 8608366483</p>
+          <p className="contact_link"> <a href="tell:918608366483"> +91 8608366483</a></p>
         </div>
         <div id="Email" className="contact-card">
           <h2>E-mail:</h2>
-          <p>sivakumarelango15@gmail.com</p>
+          <p className="contact_link"> <a href="mailto:sivakumarelango15@gmail.com"> sivakumarelango15@gmail.com </a> </p>
+          
         </div>
         </div>
         <div id="contactLogo">
           <img
             src={Git}
             alt="GitHub"
+            onClick={()=>{window.open("https://github.com/e-sivakumar", "_blank")}}
             className={hovered === "Git" ? "hovered" : ""}
             onMouseEnter={() => setHovered("Git")}
             onMouseLeave={() => setHovered(null)}
@@ -41,6 +43,7 @@ const Contact = () => {
           <img
             src={Linkedin}
             alt="LinkedIn"
+            onClick={()=>{window.open("https://www.linkedin.com/in/sivakumar-e-260862213/", "_blank")}}
             className={hovered === "Linkedin" ? "hovered" : ""}
             onMouseEnter={() => setHovered("Linkedin")}
             onMouseLeave={() => setHovered(null)}

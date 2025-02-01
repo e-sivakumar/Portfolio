@@ -127,6 +127,7 @@
     gap: 30px;
     padding: 0 10px;
   }
+  
   /* Contact Cards */
   .contact-card {
     background-color: #212121;
@@ -156,6 +157,21 @@
     font-size: 1rem;
     color: #e2e8f0;
   }
+  .contact_link a{
+    color: #e2e8f0;
+    text-decoration: none;
+  }
+
+
+  /* .contact_link{
+    border-radius: 10px;
+    height:35%;
+    width: 100%;
+  }
+  .contact_link:hover{
+    background-color: #716f6f;
+  } */
+  
   
   /* Contact Logos */
   #contactLogo {
@@ -170,13 +186,14 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    border: 2px solid #61dbfb;
+    /* border: 2px solid #61dbfb; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   #Contactsection img:hover {
     transform: scale(1.2);
     box-shadow: 0 6px 12px rgba(97, 219, 251, 0.5);
+    cursor: pointer;
   }
   
   /* Responsive Design */

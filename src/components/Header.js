@@ -49,7 +49,7 @@ topLeftImage.addEventListener('click', () => {
 
         {/* <h1 id="headerTitle"><span>P</span>itch<span>D</span>eck</h1> */}
 
-        <img src={TopLeftPic} id="TopLeft" alt="Flipping Image" />
+        <img src={TopLeftPic} id="TopLeft" alt="Flipping" />
 
 
         {window.innerWidth <= 1000 && (

@@ -1,5 +1,5 @@
   #ExpSection {
-    /* padding: 50px 20px; */
+    margin-bottom: 30px;
     background: black;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Adds depth */
     display: flex;
@@ -8,7 +8,7 @@
   
   /* Column Styling */
   #ExpCol {
-    max-width: 800px;
+    max-width: 80%;
     text-align: center;
   }
   
@@ -25,7 +25,7 @@
   .expContainer {
     background-color: #1a1a1a;
     padding: 20px;
-    margin: 20px 0;
+    margin: 30px 0;
     border-radius: 15px;
     animation: slideUp 0.5s ease-in-out;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -84,23 +84,10 @@
   #ExpMainContent p {
     font-size: 16px;
     line-height: 1.6;
-    color: #e0e0e0; /* Softer white for better readability */
+    color: #e0e0e0; 
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #ExpCol {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-  
-    #ExpMainContent {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .expContainer {
-      margin: 10px 0;
-    }
+  #ExpMainContent {
+    align-items: center;
   }
   

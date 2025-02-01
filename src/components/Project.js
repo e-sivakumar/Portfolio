@@ -160,7 +160,7 @@ console.log("size ",  windowDimensions)
 
   const nextSlide = () => {
     const windowWidth = getWindowDimensions();
-    if ( windowWidth > 600) {
+    if ( windowWidth > 750) {
       console.log("rotation", windowDimensions)
       setIsAnimating(true);
       setCurrentIndex((prev) => (prev + 1) % projectData.length);
@@ -169,7 +169,7 @@ console.log("size ",  windowDimensions)
   };
 
   const prevSlide = () => {
-    if (!isAnimating && windowDimensions > 600) {
+    if (!isAnimating && windowDimensions > 750) {
       setIsAnimating(true);
       setCurrentIndex((prev) => (prev - 1 + projectData.length) % projectData.length);
       setTimeout(() => setIsAnimating(false), 500);
@@ -186,7 +186,7 @@ console.log("size ",  windowDimensions)
     <div className="container" >
       <div className="wrapper">
         <h2 className="header">Featured Projects</h2>
-        {windowDimensions > 600 && <button className="arrow left" onClick={prevSlide}>
+        {windowDimensions > 750 && <button className="arrow left" onClick={prevSlide}>
           &#8592;
         </button>}
         <div className="carousel">
@@ -223,10 +223,10 @@ console.log("size ",  windowDimensions)
             );
           })}
         </div>
-        { windowDimensions > 600 && <button className="arrow right" onClick={nextSlide}>
+        { windowDimensions > 750 && <button className="arrow right" onClick={nextSlide}>
           &#8594;
         </button>}
-        { windowDimensions > 600 && <div className="dots">
+        { windowDimensions > 750 && <div className="dots">
           {projectData.map((_, index) => (
             <div
               key={index}

@@ -105,28 +105,6 @@
       font-size: 0.8rem;
     }
   }
-  @media (max-width: 750px) {
-    .card {
-      width: 50%;
-    }
-    .carousel{
-      min-height: 730px;
-    }
-    .responsibility{
-      font-size: 0.7rem;
-    }
-    .card p{
-      font-size: 0.7rem;
-    }
-    .card h3{
-      font-size: 1.5rem;
-    }
-    .tech{
-      font-size: 0.6rem;
-    }
-  }
-
-  
   .activeCard {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -144,6 +122,77 @@
     transform: translateX(20%) scale(0.9);
     z-index: 1;
   }
+  @media (max-width: 750px) {
+    .card {
+      width: 50%;
+    }
+    .carousel{
+      min-height: 730px;
+    }
+    .responsibility{
+      font-size: 1rem;
+    }
+    .card p{
+      font-size: 1rem;
+    }
+    .card h3{
+      font-size: 1.5rem;
+    }
+    .tech{
+      font-size: 0.8rem;
+    }
+    .carousel {
+      flex-direction: column; 
+      overflow: hidden;
+      width: 100%;
+    position: relative;
+    min-height: 500px;
+    perspective: 1000px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    }
+    
+  
+    .card {
+      width: 40%;
+      margin-bottom: 1rem; 
+      padding: 1rem;
+    }
+    .card {
+      position: relative;
+      width: 60%;
+      padding: 2rem;
+      height: 80%;
+      transition: none;
+      opacity:unset;
+      transform: translateX(100%) scale(0.8);
+    }
+    .activeCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+    
+    .prevCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+    
+    .nextCard {
+      opacity: 1;
+      transform: none;
+      z-index: 0;
+    }
+  }
+
+  
+ 
   @media (max-width: 600px) {
     .carousel {
       flex-direction: column; 

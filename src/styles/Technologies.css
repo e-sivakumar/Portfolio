@@ -65,10 +65,10 @@
   }
   
   /* Optional Animation */
-  .tech-card:hover .tech-logo {
+  /* .tech-card:hover .tech-logo {
     transform: rotate(360deg);
     transition: transform 2s ease-in-out;
-  }
+  } */
   .tech-card:hover .tech-content p{
     display: block;
   }

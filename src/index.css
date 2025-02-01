@@ -14,12 +14,12 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   /* border-radius: 20px; */
 }
 
 ::-webkit-scrollbar-track {
-  background: #adadad;
+  background: #8c8b8b;
   border-radius: 6px;
 
 }
