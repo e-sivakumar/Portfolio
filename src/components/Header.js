@@ -1,6 +1,5 @@
 import "../styles/Header.css";
 import { useState, useEffect } from "react";
-import TopLeftPic from "../images/siva1.jpeg";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
