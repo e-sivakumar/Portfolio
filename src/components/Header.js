@@ -1,6 +1,7 @@
 import "../styles/Header.css";
 import { useState, useEffect } from "react";
-import TopLeftPic from "../images/siva1.jpeg"
+import TopLeftPic from "../images/siva1.jpeg";
+import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -49,7 +50,7 @@ topLeftImage.addEventListener('click', () => {
 
         {/* <h1 id="headerTitle"><span>P</span>itch<span>D</span>eck</h1> */}
 
-        <img src={TopLeftPic} id="TopLeft" alt="Flipping" />
+        <img src={logo} id="TopLeft" alt="Flipping" />
 
 
         {window.innerWidth <= 1000 && (
