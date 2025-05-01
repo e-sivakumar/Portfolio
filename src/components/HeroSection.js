@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/HeroSection.css';
 import logo from '../images/logoreact.webp'
 import nodeLogo from '../images/Node.js.png'
-import photo from '../images/siva1.jpeg'
+import photo from '../images/sivakumar.jpg'
 
 const HeroSection = () => {
   const [isLoaded, setLoaded] = useState(false);
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div id='HeroCol'>
         <div className='column-1'>
           <h1 >
-            Hi, I'm Sivakumar <br /><span>Node.js Developer</span>
+            Hi, I'm Sivakumar <br /><span>MERN Developer</span>
           </h1>
           <div className='logoSection'>
             
