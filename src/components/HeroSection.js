@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div id='HeroCol'>
         <div className='column-1'>
           <h1 >
-            Hi, I'm Sivakumar <br /><span>MERN Developer</span>
+            Hi, I'm Sivakumar <br /><span>MERN Stack Developer</span>
           </h1>
           <div className='logoSection'>
             
