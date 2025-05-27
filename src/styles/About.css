@@ -77,14 +77,72 @@
   color: #cccccc;
 }
 
+#ResumeButtons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  align-items: center;
+}
 
-/* Hover Effect */
-/* #AboutCol p:hover {
-  color: #61DBFB;
-  transition: color 0.3s ease;
-} */
+.resume-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #3292f9;
+  color: white;
+  align-items: center;
+  display: flex;
+    align-items: center;
 
-/* Responsive Styling */
+}
+
+.resume-btn:hover {
+  background-color: #1885fa;
+  transform: translateY(-2px);
+}
+
+.download-icon{
+  width: 30px;
+  height: 3rem;
+  color: white;
+}
+
+@media (max-width: 650px){
+  .resume-btn {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #3292f9;
+    color: white;
+    display: flex;
+    align-items: center;
+
+  }
+}
+@media (max-width: 400px){
+  .resume-btn {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    font-size: 0.6rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #3292f9;
+    color: white;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
 @media (max-width: 768px) {
   #AboutSection {
     padding: 30px 10px;
