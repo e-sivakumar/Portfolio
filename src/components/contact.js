@@ -19,12 +19,9 @@ const Contact = () => {
         <div id="contactContainer">
         <div id="Address" className="contact-card">
           <h2>Address:</h2>
-          <p>Ahimsapuram 5th street, Sellur,<br/>Madurai-02.</p>
+          <p>Ahimsapuram 5th street, Sellur,<br/>Madurai, TamilNadu. </p>
         </div>
-        <div id="Phoneno" className="contact-card">
-          <h2>Phone No:</h2>
-          <p className="contact_link"> <a href="tel:918608366483"> +91 8608366483</a></p>
-        </div>
+        
         <div id="Email" className="contact-card">
           <h2>E-mail:</h2>
           <p className="contact_link"> <a href="mailto:sivakumarelango15@gmail.com"> sivakumarelango15@gmail.com </a> </p>

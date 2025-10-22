@@ -9,7 +9,14 @@ import mysql from "../images/mysql.svg"
 import firebase from "../images/firebase.svg"
 import htmlcss from "../images/html&css.png"
 import jwt from "../images/jwt.png"
-import sso from "../images/sso.webp"
+import cheerio from "../images/cheerio.png"
+import neo4j from "../images/neo4j_logo.jpg"
+import nodemailer from "../images/nodemailer.jpg"
+import git from "../images/Git.svg"
+import oauth from "../images/oauth.webp"
+import puppeteer from "../images/puppeteer.svg"
+import swagger from "../images/Swagger.svg"
+import tailwind from "../images/Tailwind CSS.svg"
 
 const techCategories = [
   {
@@ -18,12 +25,12 @@ const techCategories = [
       { 
         name: "JavaScript",
         logo: js, 
-        description: "Versatile scripting language used for both frontend and backend development." 
+        description: "Primary language used for full-stack web application development." 
       },
       { 
         name: "TypeScript", 
         logo: ts, 
-        description: "JavaScript with static typing for large-scale application development." 
+        description: "Strongly-typed JavaScript for building scalable, maintainable backend systems." 
       },
     ],
   },
@@ -38,7 +45,12 @@ const techCategories = [
       { 
         name: "MongoDB", 
         logo: mongo, 
-        description: "NoSQL database designed for scalability and flexibility." 
+        description: "NoSQL database for flexible and high-performance data storage." 
+      },
+      { 
+        name: "Neo4j", 
+        logo: neo4j, 
+        description: "Graph database for modeling complex data relationships." 
       },
     ],
   },
@@ -48,27 +60,32 @@ const techCategories = [
       { 
         name: "Node.js", 
         logo: node, 
-        description: "JavaScript runtime for building scalable server-side applications." 
+        description: "Runtime for building fast, event-driven, and scalable backend applications." 
       },
       { 
         name: "Express.js", 
         logo: express, 
-        description: "Fast, unopinionated framework for Node.js web applications." 
+        description: "Lightweight framework for structuring RESTful APIs and server logic." 
       },
     ],
   },
   {
-    category: "Web Technologies",
+    category: "Frontend & UI Development",
     technologies: [
       { 
         name: "React", 
         logo: react, 
-        description: "Library for building interactive user interfaces." 
+        description: "Library for building responsive and modern user interfaces." 
       },
       { 
         name: "HTML & CSS", 
         logo: htmlcss, 
         description: "Foundational technologies for structuring and styling web pages." 
+      },
+      { 
+        name: "Tailwind CSS", 
+        logo: tailwind, 
+        description: "Utility-first CSS framework for building responsive layouts quickly." 
       },
     ],
   },
@@ -86,9 +103,44 @@ const techCategories = [
         description: "Managed service for user authentication.`" 
       },
       { 
-        name: "Google SSO", 
-        logo: sso, 
-        description: "Single sign-on service for seamless authentication." 
+        name: "OAuth 2.0", 
+        logo: oauth, 
+        description: "Enables Google and Facebook secure login integration." 
+      },
+    ],
+  },
+  {
+    category: "APIs & Utilities",
+    technologies: [
+      { 
+        name: "Swagger", 
+        logo: swagger, 
+        description: "API documentation tool for describing and testing RESTful endpoints." 
+      },
+      { 
+        name: "Puppeteer", 
+        logo: puppeteer, 
+        description: "Used for automating browser tasks and scraping real-world websites." 
+      },
+      { 
+        name: "Cheerio", 
+        logo: cheerio, 
+        description: "jQuery-like syntax for parsing and extracting data from HTML." 
+      },
+      { 
+        name: "Nodemailer", 
+        logo: nodemailer, 
+        description: "Library for sending emails, used in user invitations and workflows." 
+      },
+    ],
+  },
+  {
+    category: "Version Control & Collaboration",
+    technologies: [
+      { 
+        name: "Git", 
+        logo: git, 
+        description: "Version control system for collaborative software development." 
       },
     ],
   },

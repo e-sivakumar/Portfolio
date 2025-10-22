@@ -5,22 +5,23 @@ const Experience = () => {
     <div>
       <section id="ExpSection">
         <div id="ExpCol">
-            <h1>Experience</h1>
+          <h1>Experience</h1>
           <div className="expContainer">
             <h2>Junior Developer </h2>
             <h3>Bytecompass LLP</h3>
             <h4>Jun 2023 - Present</h4>
             <div id="ExpMainContent">
-              
+
               <div>
                 <h3>Role </h3>
                 <p>
                   <ul>
-                <li>Building reliable and efficient server-side applications. </li>
-                <li> My work involves creating APIs, managing databases, and ensuring smooth client-server communication. </li>
-                <li> I collaborate with teams to deliver complete solutions and focus on writing clean and optimized code. </li>
-                <li>My role also includes integrating third-party services and ensuring system performance and security.</li>
-                </ul></p>
+                    <li>Working as a <strong>MERN Stack Developer</strong>, building full-stack web applications.</li>
+                    <li>Developing RESTful APIs, managing databases with <strong>Mongo DB</strong>, and ensuring smooth integration.</li>
+                    <li>Implementing secure authentication using <strong>Firebase</strong> and <strong>Passport.js</strong>.</li>
+                    <li>Designing responsive UIs in <strong>React</strong> with <strong>Tailwind CSS</strong> for clean and user-friendly interfaces.</li>
+                    <li>Contributing to end-to-end development, from API design to deployment and maintenance.</li>
+                  </ul></p>
               </div>
             </div>
           </div>
@@ -33,7 +34,7 @@ const Experience = () => {
               <div>
                 <h3>Role </h3>
                 <p>
-                <ul> <li>Performed detailed labeling and categorization contents based on specific guidelines.</li> <li>Ensured high-quality annotations by maintaining accuracy and consistency throughout the process.</li> <li>Collaborated with teams to deliver reliable and structured data for further processing and analysis.</li> </ul>
+                  <ul> <li>Performed detailed labeling and categorization contents based on specific guidelines.</li> <li>Ensured high-quality annotations by maintaining accuracy and consistency throughout the process.</li> <li>Collaborated with teams to deliver reliable and structured data for further processing and analysis.</li> </ul>
                 </p>
               </div>
               <div></div>
