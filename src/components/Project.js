@@ -172,19 +172,9 @@
 
 // export default Project;
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Project.css";
 import projectSvg from "../images/project-svg.svg"
-import node from "../images/Node.js.png"
-import jwt from "../images/jwt.png"
-import cheerio from "../images/cheerio.png"
-import neo4j from "../images/neo4j_logo.jpg"
-import nodemailer from "../images/nodemailer.jpg"
-import git from "../images/Git.svg"
-import oauth from "../images/oauth.webp"
-import puppeteer from "../images/puppeteer.svg"
-import swagger from "../images/Swagger.svg"
-import tailwind from "../images/Tailwind CSS.svg"
 
 export default function Projects({ projects: propProjects }) {
   // const defaultProjects = [
